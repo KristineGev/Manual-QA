@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "e028a55e-42a8-47af-b19b-514e936d5213",
+		"name": "API  homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Advanced course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity2.herokuapp.com/courses/advanced/api\n",
+					"protocol": "https",
+					"host": [
+						"qwallity2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"courses",
+						"advanced",
+						"api\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get fundamental courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity2.herokuapp.com/courses/fundamental/api",
+					"protocol": "https",
+					"host": [
+						"qwallity2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"courses",
+						"fundamental",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fundamental courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"API\",\r\n\"body\": \"creating API collections\",\r\n\"coursetype\": \"2\",\r\n\"author\": \"Kristine\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity2.herokuapp.com/add_course/api",
+					"protocol": "https",
+					"host": [
+						"qwallity2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"add_course",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"updated with postman\",\r\n\"body\": \"updated body with postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity2.herokuapp.com/course/2998/update/",
+					"protocol": "https",
+					"host": [
+						"qwallity2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course",
+						"2998",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity2.herokuapp.com/courses/course/2999",
+					"protocol": "https",
+					"host": [
+						"qwallity2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"courses",
+						"course",
+						"2999"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
